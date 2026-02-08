@@ -17,7 +17,7 @@ Recipe Finder is a web application built with Angular that allows users to searc
 
 ## Group 3
 - App Development: Group 3 App Developers
-- Presentation: Group Members
+- Presentation: Group Members on Tuesday
 
 ## How to Run
 ```bash
