@@ -1,0 +1,77 @@
+<div class="home-page">
+  <mat-toolbar class="hero-toolbar">
+    <span class="brand">
+      <mat-icon class="brand-icon">restaurant</mat-icon>
+      Nigerian Recipe Finder
+    </span>
+  </mat-toolbar>
+
+  <section class="hero">
+    <p class="subtitle">Discover authentic Nigerian recipes</p>
+
+    <div class="search-container">
+      <mat-form-field class="search-field" appearance="outline">
+        <mat-label>Search by ingredient</mat-label>
+        <input
+          matInput
+          [(ngModel)]="searchInput"
+          placeholder="Search by ingredient (e.g. Tomato, Pepper)"
+          (keyup.enter)="search()"
+        />
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        class="search-button"
+        (click)="search()"
+      >
+        <mat-icon>search</mat-icon>
+        Search
+      </button>
+    </div>
+  </section>
+
+  @if (!isSearching()) {
+    <section class="section">
+      <h2 class="section-title">Trending Foods</h2>
+
+      <div class="recipe-grid">
+        @for (recipe of displayedRecipes(); track recipe.id) {
+          <mat-card class="recipe-card" [routerLink]="['/recipe', recipe.id]">
+            <img mat-card-image [src]="recipe.image" [alt]="recipe.title" />
+            <mat-card-content>
+              <h3>{{ recipe.title }}</h3>
+            </mat-card-content>
+          </mat-card>
+        }
+      </div>
+    </section>
+  } @else {
+    <section class="section">
+      <h2 class="section-title">Search Results</h2>
+
+      @if (displayedRecipes().length === 0) {
+        <div class="no-results">
+          <mat-icon>search_off</mat-icon>
+          <p>No recipes match that ingredient.</p>
+        </div>
+      } @else {
+        <div class="recipe-grid">
+          @for (recipe of displayedRecipes(); track recipe.id) {
+            <mat-card class="recipe-card" [routerLink]="['/recipe', recipe.id]">
+              <img mat-card-image [src]="recipe.image" [alt]="recipe.title" />
+              <mat-card-content>
+                <h3>{{ recipe.title }}</h3>
+                <div class="ingredients-preview">
+                  <mat-icon class="ingredient-icon">local_dining</mat-icon>
+                  <div>{{ recipe.ingredients.length }} ingredients</div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          }
+        </div>
+      }
+    </section>
+  }
+</div>

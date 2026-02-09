@@ -1,0 +1,57 @@
+<div class="detail-container">
+  <button mat-raised-button (click)="goBack()" class="back-button">
+    <mat-icon>arrow_back</mat-icon>
+    Back to Recipes
+  </button>
+
+  @if (recipe(); as recipeData) {
+    <mat-card class="recipe-detail-card">
+      <img mat-card-image [src]="recipeData.image" [alt]="recipeData.title" class="recipe-image">
+      
+      <mat-card-header class="recipe-header">
+        <mat-card-title class="recipe-title">
+          <mat-icon class="title-icon">restaurant_menu</mat-icon>
+          {{ recipeData.title }}
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content class="recipe-content">
+        <div class="section">
+          <h2 class="section-title">
+            <mat-icon>shopping_basket</mat-icon>
+            Ingredients
+          </h2>
+          <mat-divider></mat-divider>
+          <div class="chips-container">
+            @for (ingredient of recipeData.ingredients; track ingredient) {
+              <mat-chip class="ingredient-chip">{{ ingredient }}</mat-chip>
+            }
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">
+            <mat-icon>assignment</mat-icon>
+            Instructions
+          </h2>
+          <mat-divider></mat-divider>
+          <ol class="instructions-list">
+            @for (instruction of recipeData.instructions; track $index) {
+              <li class="instruction-item">{{ instruction }}</li>
+            }
+          </ol>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  } @else {
+    <mat-card class="not-found-card">
+      <mat-card-content>
+        <div class="not-found">
+          <mat-icon>error_outline</mat-icon>
+          <h2>Recipe Not Found</h2>
+          <p>The recipe you're looking for doesn't exist.</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>

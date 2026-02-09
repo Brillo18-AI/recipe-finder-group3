@@ -1,0 +1,131 @@
+
+[
+  {
+    "id": 1,
+    "title": "Jollof Rice",
+    "ingredients": ["Rice", "Tomato", "Pepper", "Onion", "Oil"],
+    "instructions": [
+      "Blend tomatoes, pepper, and onions together",
+      "Heat oil in a large pot and fry the blended mixture",
+      "Add rice and stir to coat with the sauce",
+      "Add water and seasonings",
+      "Cover and simmer until rice is cooked and tender"
+    ],
+    "image": "assets/images/jollof-rice.jpg",
+    "trending": true
+  },
+  {
+    "id": 2,
+    "title": "Egusi Soup",
+    "ingredients": ["Egusi seeds", "Palm oil", "Vegetables", "Meat"],
+    "instructions": [
+      "Grind egusi seeds into powder",
+      "Cook meat with seasonings until tender",
+      "Heat palm oil in a pot",
+      "Add egusi powder and stir continuously",
+      "Add meat stock and cooked meat",
+      "Add vegetables and simmer for 10 minutes"
+    ],
+    "image": "assets/images/egusi-soup.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Puff Puff",
+    "ingredients": ["Flour", "Sugar", "Yeast", "Water", "Salt"],
+    "instructions": [
+      "Mix flour, sugar, yeast, and salt in a bowl",
+      "Add warm water gradually and mix into a smooth batter",
+      "Cover and let it rise for 1 hour",
+      "Heat oil in a deep pan",
+      "Scoop small portions of batter into the hot oil",
+      "Fry until golden brown on all sides"
+    ],
+    "image": "assets/images/puff-puff.jpg",
+    "trending": true
+  },
+  {
+    "id": 4,
+    "title": "Suya",
+    "ingredients": ["Beef", "Groundnut powder", "Pepper", "Ginger", "Garlic"],
+    "instructions": [
+      "Cut beef into thin strips",
+      "Mix groundnut powder with spices to make suya spice",
+      "Coat beef strips with the suya spice mix",
+      "Thread beef onto skewers",
+      "Grill over charcoal or in oven until cooked",
+      "Serve with sliced onions and tomatoes"
+    ],
+    "image": "assets/images/suya.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Moi Moi",
+    "ingredients": ["Beans", "Pepper", "Onion", "Palm oil", "Egg"],
+    "instructions": [
+      "Soak and peel beans",
+      "Blend beans with pepper and onions",
+      "Add palm oil, seasoning, and mix well",
+      "Pour mixture into containers or leaves",
+      "Add boiled egg if desired",
+      "Steam for 45 minutes until firm"
+    ],
+    "image": "assets/images/moi-moi.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pepper Soup",
+    "ingredients": ["Goat meat", "Pepper", "Ginger", "Garlic", "Onion", "Scent leaf"],
+    "instructions": [
+      "Rinse and season the meat",
+      "Boil meat with onions and spices until tender",
+      "Add pepper soup spice and adjust seasoning",
+      "Simmer for 10 minutes to infuse the broth",
+      "Finish with scent leaf before serving"
+    ],
+    "image": "assets/images/pepper-soup.jpg",
+    "trending": true
+  },
+  {
+    "id": 7,
+    "title": "Abacha",
+    "ingredients": ["Cassava strips", "Palm oil", "Pepper", "Onion", "Crayfish", "Salt"],
+    "instructions": [
+      "Soak cassava strips in water for about 2 hours",
+      "Drain and squeeze out excess water",
+      "In a large bowl, mix cassava strips with palm oil, pepper, and onions",
+      "Add crayfish and salt to taste",
+      "Toss well and mix thoroughly until evenly coated",
+      "Serve cold as a snack or light meal"
+    ],
+    "image": "assets/images/abacha.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Banga Soup",
+    "ingredients": ["Palm kernel broth", "Fish", "Beef", "Pepper", "Onion", "Okra", "Salt"],
+    "instructions": [
+      "Extract palm kernel broth by boiling the nuts and processing them",
+      "In a large pot, heat the palm kernel broth",
+      "Add diced fish and beef with seasonings",
+      "Simmer for 15 minutes until meat is tender",
+      "Add pepper, onion, and okra",
+      "Simmer for another 10 minutes and serve hot"
+    ],
+    "image": "assets/images/banga-soup.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Fried Rice",
+    "ingredients": ["Rice", "Vegetables", "Egg", "Oil", "Onion", "Pepper", "Soy sauce"],
+    "instructions": [
+      "Cook rice and allow to cool completely",
+      "Heat oil in a large skillet",
+      "Stir-fry diced onions and peppers until fragrant",
+      "Add beaten eggs and scramble",
+      "Add cooled rice and mix well",
+      "Stir in mixed vegetables and soy sauce",
+      "Toss continuously for 3-5 minutes and serve"
+    ],
+    "image": "assets/images/fried-rice.jpg"
+  }
+]

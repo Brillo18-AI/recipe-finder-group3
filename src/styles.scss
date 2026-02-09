@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap');
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', 'Georgia', serif;
+}
